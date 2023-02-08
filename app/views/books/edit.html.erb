@@ -1,2 +1,14 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<h1>Editing Book</h1>
+
+<%= form_with model: @Book do |f| %>
+
+<span>Title</span>
+<%= f.text_field:title %>
+
+<span>Body</span>
+<%= f.text_area:body %>
+
+<%= f.submit "Update Book" %>
+
+<span><a href= "/books/#{book.id}">Show</a></span>
+<span></span>
