@@ -1,4 +1,4 @@
-<p>
+<p id="notice">
     <%= flash[:notice] %>
 </p>
 
@@ -13,6 +13,6 @@
     <%= @book.body %>
 </p>
 
-<a href= "/books/#{@book.id}/edit">Edit</a>
+<%= link_to "Edit", edit_book_path(@book.id) %>
 |
-<a href= "/books">Back</a>
+<%= link_to "Back", '/books' %>
